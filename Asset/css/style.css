@@ -1,0 +1,510 @@
+/* =========================================================
+   IMPOSTAZIONI GENERALI
+   ========================================================= */
+* {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #243438;
+    background-color: #ffffff;
+    line-height: 1.6;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+a {
+    color: inherit;
+}
+.container {
+    width: 90%;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+.section {
+    padding: 70px 0;
+}
+.section-heading {
+    max-width: 750px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+.section-heading h2 {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-size: 32px;
+    color: #064b5b;
+}
+.section-heading p {
+    margin: 0;
+}
+.section-label {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    color: #087f75;
+}
+/* =========================================================
+   ACCESSIBILITÀ
+   ========================================================= */
+.skip-link {
+    position: absolute;
+    top: -50px;
+    left: 20px;
+    background-color: #ffffff;
+    color: #064b5b;
+    padding: 10px 16px;
+    z-index: 1000;
+    text-decoration: none;
+    font-weight: bold;
+}
+.skip-link:focus {
+    top: 20px;
+}
+/* =========================================================
+   HEADER
+   ========================================================= */
+.site-header {
+    background-color: #064b5b;
+    color: white;
+    padding: 18px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+.brand h1 {
+    margin: 0;
+    font-size: 25px;
+}
+.brand p {
+    margin: 2px 0 0;
+    font-size: 13px;
+    opacity: 0.85;
+}
+.main-nav ul {
+    display: flex;
+    gap: 22px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+.main-nav a:hover,
+.main-nav a:focus {
+    text-decoration: underline;
+}
+/* =========================================================
+   HERO
+   ========================================================= */
+.hero {
+    background-color: #e6f4f1;
+    padding: 100px 0;
+    text-align: center;
+}
+.hero-content {
+    max-width: 850px;
+}
+.hero-label {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #087f75;
+}
+.hero h2 {
+    margin: 0 0 20px;
+    font-size: 44px;
+    line-height: 1.2;
+    color: #064b5b;
+}
+.hero-text {
+    max-width: 720px;
+    margin: 0 auto 30px;
+    font-size: 18px;
+}
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+/* =========================================================
+   PULSANTI
+   ========================================================= */
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.button-primary {
+    background-color: #087f75;
+    color: white;
+}
+.button-primary:hover,
+.button-primary:focus {
+    background-color: #065f58;
+}
+.button-secondary {
+    background-color: #ffffff;
+    color: #064b5b;
+    border: 2px solid #064b5b;
+}
+.button-secondary:hover,
+.button-secondary:focus {
+    background-color: #064b5b;
+    color: white;
+}
+.button-outline {
+    color: #087f75;
+    border: 2px solid #087f75;
+    background-color: transparent;
+}
+.button-outline:hover,
+.button-outline:focus {
+    background-color: #087f75;
+    color: white;
+}
+/* =========================================================
+   SEZIONE AZIENDA
+   ========================================================= */
+.about-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+.about-text p:first-child {
+    margin-top: 0;
+}
+.company-data {
+    background-color: #f3f7f6;
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 5px solid #087f75;
+}
+.company-data h3 {
+    margin-top: 0;
+    color: #064b5b;
+}
+.company-data dl {
+    margin: 0;
+}
+.data-item {
+    padding: 12px 0;
+    border-bottom: 1px solid #d9e4e1;
+}
+.data-item:last-child {
+    border-bottom: none;
+}
+.data-item dt {
+    font-weight: bold;
+    color: #087f75;
+}
+.data-item dd {
+    margin: 3px 0 0;
+}
+/* =========================================================
+   STRATEGIA
+   ========================================================= */
+.strategy-section {
+    background-color: #f3f7f6;
+}
+.strategy-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.strategy-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #dce5e3;
+}
+.strategy-card h3 {
+    margin-top: 10px;
+    color: #064b5b;
+}
+.card-number {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    color: #087f75;
+}
+/* =========================================================
+   SOSTENIBILITÀ
+   ========================================================= */
+.sustainability-section {
+    background-color: #ffffff;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+.card {
+    background-color: #ffffff;
+    padding: 28px;
+    border-radius: 10px;
+    border: 1px solid #dce5e3;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+.card h3 {
+    color: #064b5b;
+    margin-top: 10px;
+}
+.card-icon {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: #e6f4f1;
+    color: #087f75;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 13px;
+}
+/* =========================================================
+   RISULTATI / KPI
+   ========================================================= */
+.results-section {
+    background-color: #064b5b;
+    color: white;
+}
+.results-section .section-heading h2,
+.results-section .section-label {
+    color: white;
+}
+.kpi-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.kpi {
+    text-align: center;
+    padding: 25px 15px;
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+}
+.kpi strong {
+    display: block;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+.kpi span {
+    font-size: 14px;
+}
+/* =========================================================
+   REPORT
+   ========================================================= */
+.reports-section {
+    background-color: #f3f7f6;
+}
+.report-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+.report-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #dce5e3;
+}
+.report-year {
+    background-color: #087f75;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 26px;
+    font-weight: bold;
+}
+.report-content {
+    padding: 25px;
+}
+.report-content h3 {
+    margin-top: 0;
+    color: #064b5b;
+}
+.file-info {
+    font-size: 14px;
+    color: #647477;
+    margin-bottom: 20px;
+}
+.official-link {
+    margin-top: 40px;
+    text-align: center;
+}
+/* =========================================================
+   COME UTILIZZARE LA PAGINA
+   ========================================================= */
+.how-section {
+    background-color: #ffffff;
+}
+.steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.step {
+    text-align: center;
+}
+.step span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 15px;
+    background-color: #087f75;
+    color: white;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: bold;
+}
+.step h3 {
+    color: #064b5b;
+}
+/* =========================================================
+   FOOTER
+   ========================================================= */
+.site-footer {
+    background-color: #043b48;
+    color: white;
+    padding-top: 45px;
+}
+.footer-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 40px;
+}
+.site-footer h2,
+.site-footer h3 {
+    margin-top: 0;
+}
+.site-footer ul {
+    list-style: none;
+    padding: 0;
+}
+.site-footer li {
+    margin-bottom: 8px;
+}
+.site-footer a {
+    color: white;
+    text-decoration: none;
+}
+.site-footer a:hover,
+.site-footer a:focus {
+    text-decoration: underline;
+}
+.footer-bottom {
+    margin-top: 35px;
+    padding: 18px;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+}
+/* =========================================================
+   RESPONSIVE DESIGN - TABLET
+   ========================================================= */
+@media (max-width: 900px) {
+    .header-container {
+        flex-direction: column;
+    }
+    .main-nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+    .strategy-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .kpi-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .report-grid {
+        grid-template-columns: 1fr;
+    }
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+/* =========================================================
+   RESPONSIVE DESIGN - SMARTPHONE
+   ========================================================= */
+@media (max-width: 600px) {
+    .section {
+        padding: 50px 0;
+    }
+    .site-header {
+        position: static;
+    }
+    .main-nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .hero {
+        padding: 70px 0;
+    }
+    .hero h2 {
+        font-size: 32px;
+    }
+    .hero-text {
+        font-size: 16px;
+    }
+    .section-heading h2 {
+        font-size: 27px;
+    }
+    .strategy-grid {
+        grid-template-columns: 1fr;
+    }
+    .cards {
+        grid-template-columns: 1fr;
+    }
+    .kpi-container {
+        grid-template-columns: 1fr;
+    }
+    .steps {
+        grid-template-columns: 1fr;
+    }
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+    .button {
+        width: 100%;
+        text-align: center;
+    }
+}
